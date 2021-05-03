@@ -7,6 +7,10 @@
         padding: 0px;
     }
 
+    .bannner{
+        background-size: auto;
+    }
+
     header ul {
         height: 100vh;
         position: fixed;
