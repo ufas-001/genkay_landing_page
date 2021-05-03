@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./faq.style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.btn.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/rolly.js@0.2.1/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+    <main class="app">
+        <header data-aos="fade-up">
+            <div class="logo">
+                <img src="./assets/genkay-logo-small.png" alt="">
+            </div>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            
+                <ul class="right-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html">Our Services</a></li>
+                    <li><a href="./index.html#contact">Products</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                </ul>
+        
+        </header>
+
+        <section class="faq-sec" data-scene>
+            <div class="container">
+                <h4>FAQ</h4>
+            </div>
+        </section>
+        <section class="faq-content" data-scene>
+            <div class="container">
+                <h4 class="faq-head1">Common questions about Genkay Doors and Interior</h4>
+                <p class="faq-desc1">Holla <a href="#" class="">@genkaydoorsandinteriors</a> if you've got more questions and we will do our best to answer</p>
+            </div>
+        </section>
+
+        <section class="faq-qa" data-scene>
+            <div class="container faq-container">
+                <div class="faq-qa-container faq-qa-container1">
+                    <div class="qa-tittle">
+                        <h4 class="header"><i class="fas fa-minus minus-icon" id="minus-icon"></i> <i class="fas fa-plus plus-icon d-none" id="plus-icon"></i> How do you go about the delivery services?</h4>
+                    </div>
+                    <div class="qa-content d-none">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro repudiandae ipsa tempora alias repellendus enim temporibus necessitatibus minima, sunt iste unde, quia assumenda numquam nobis sed! Veritatis, provident minimag?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container faq-container">
+                <div class="faq-qa-container faq-qa-container2">
+                    <div class="qa-tittle">
+                        <h4 class="header"><i class="fas fa-minus minus-icon"></i> <i class="fas fa-plus plus-icon d-none"></i> How do you go about the delivery services?</h4>
+                    </div>
+                    <div class="qa-content d-none">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis porro repudiandae ipsa tempora alias repellendus enim temporibus necessitatibus minima, sunt iste unde, quia assumenda numquam nobis sed! Veritatis, provident minimag?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/rolly.js@0.2.1/dist/rolly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+        $('.sec3-slider').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          speed:500,
+          autoplay: true,
+          autoplaySpeed: 500,
+          dots: false,
+          prevArrow: false,
+          nextArrow: false,
+
+          responsive: [{
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false
+              }
+            }]
+        });
+
+        const r = rolly({
+          view: document.querySelector('.app'),
+          native: true,
+          // other options
+        });
+        r.init();
+        AOS.init({
+            duration: 1500,
+        });
+
+    </script>
+</body>
+</html>
