@@ -450,5 +450,16 @@
     .faq-container{
         width: 100%;
     }
+
+    .banner {
+        height: 580px;
+        display: flex;
+        align-items: center;
+        background: url(./assets/modern-turkish-interior-design-1024x576.jpg) no-repeat center center fixed;
+        background-position: top;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        background-size: contain;
+      }
 }
 
